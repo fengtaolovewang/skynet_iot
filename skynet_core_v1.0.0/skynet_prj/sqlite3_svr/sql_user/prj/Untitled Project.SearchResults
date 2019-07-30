@@ -1,0 +1,3 @@
+---- lua_tolstring Matches (2 in 1 files) ----
+Lua.h (e:\无涯wifi开发板\无涯物联网\ubuntu 12.04\shair\user_v1.05\sqlite3\sql_user):LUA_API const char     *(lua_tolstring) (lua_State *L, int idx, size_t *len);
+Lua.h (e:\无涯wifi开发板\无涯物联网\ubuntu 12.04\shair\user_v1.05\sqlite3\sql_user):#define lua_tostring(L,i)	lua_tolstring(L, (i), NULL)

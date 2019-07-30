@@ -1,0 +1,21 @@
+void gateway_sm_SetRejoinTimeout( uint16_t timeout);
+void gateway_sm_AllowRejoin(uint8_t allow);
+
+void gateway_sm_OpenWithKey(EmberEUI64 eui64,uint8_t *key,int len);
+void gateway_sm_ClearJoiningKeys(void);
+
+void gateway_sm_SetJoiningKey(EmberEUI64 eui64,uint8_t *key,int len);
+
+void gateway_sm_StartNetwork(uint8_t radioTxPower);
+// 3.0
+void gateway_sm_StartNetworkWithParameters(uint8_t channel,uint8_t radioTxPower,EmberPanId panId);
+void gateway_sm_CloseNetwork(void);
+void gateway_sm_OpenNetwork(void);
+void gateway_sm_ZdoLeave(EmberEUI64 nullEui64, uint8_t removeChildren, uint8_t rejoin);
+
+//1.2
+void gateway_sm_NetworkForm(uint8_t radioChannel,uint8_t radioTxPower,uint16_t panId);
+
+void gateway_sm_NetworkLeave(void);
+//允许组网 1.2
+void gateway_sm_NetworkBoardPjoin(uint8_t time);
